@@ -50,6 +50,7 @@ window.geometry('+1920+100')
 window.geometry('1920x1000')
 window.config(background='#f5c542')
 
+create_table()
 
 labl1=Label(window, text="Full Name", font=("Times New Roman", 20, 'bold'), fg='red')
 labl2=Label(window, text="Flight Number", font=("Times New Roman", 20, 'bold'), fg='red')
@@ -84,6 +85,7 @@ create_date_list()
 
 textbox6= Entry(window, font=("Times New Roman", 20), fg='black')
 textbox6.grid(row=5, column=1, padx=20, pady=20)
+
 
 submit_button = Button(window, text="Book", font=("Times New Roman", 20, 'bold'), fg='blue', bg='#f5c542',command=clicked)
 submit_button.grid(row=6, column=0, columnspan=2, padx=20, pady=20)
