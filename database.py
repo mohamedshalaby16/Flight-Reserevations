@@ -3,7 +3,6 @@ import sqlite3
 conn = sqlite3.connect('flights.db')
 
 def create_table():
-    """Create the flights_table if it does not exist."""
     conn = sqlite3.connect('flights.db')
     c = conn.cursor()
     c.execute("""
