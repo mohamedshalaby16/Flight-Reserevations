@@ -23,9 +23,9 @@ def clicked():
         messagebox.showerror("Error", "Please fill in all fields.")
         return
 
-    if (not textbox1.get().isalnum() or not textbox2.get().isalnum() or
-        not textbox3.get().isalnum() or not textbox4.get().isalnum() or
-        not textbox6.get().isalnum()):
+    if (not textbox1.get().isascii() or not textbox2.get().isascii() or
+        not textbox3.get().isascii() or not textbox4.get().isascii() or
+        not textbox6.get().isascii()):
         messagebox.showerror("Error", "Please enter only letters in all fields.")
         return
     
