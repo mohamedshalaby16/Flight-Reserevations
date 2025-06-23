@@ -2,15 +2,15 @@ from tkinter import *
 #from tkinter.ttk import *
 from PIL import Image, ImageTk
 from tkinter import messagebox
-def clicked():
-    window2= Tk()
-    window2.title("Hellow")
-    window2.geometry('+1920+100')
-    window2.geometry('1920x1000')
-    window2.mainloop()
+from booking import book
+from reservations import view
+from database import create_table
 
+def clicked():
+    book()
+  
 def clicked2():
-    messagebox.showinfo(message= "No Reservations")
+    view()
 
 def HomePage():
     window = Tk()
@@ -20,6 +20,8 @@ def HomePage():
     window.geometry('1920x1000')
     window.config(background='#f5c542')
 
+    
+   
     lbl1 = Label(window , text ="Welcome in our reservation site" , font =( "Times New Roman bold" , 50) , fg= '#42adf5' , bg ='#f5c542' )
     lbl1.grid(row = 0, column =0,columnspan=2 ,padx=20,pady=20)
 
